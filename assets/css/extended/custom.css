@@ -1,0 +1,99 @@
+/* Font: IBM Plex Sans */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+    /* pxlnv.com-inspired color scheme */
+    --theme: #faf9f7;           /* warm off-white background */
+    --primary: #1a1a1a;         /* near-black text */
+    --secondary: #555;          /* muted gray for secondary text */
+    --tertiary: #e8e6e3;        /* subtle borders/dividers */
+    --content: #2c2c2c;         /* body text */
+    --hljs-bg: #f5f4f2;         /* code block background */
+    --code-bg: #f5f4f2;
+    --border: #e0ded9;
+    --link: #b35a00;            /* warm orange-brown for links */
+    --link-hover: #8a4500;
+}
+
+body {
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--theme);
+    color: var(--primary);
+    line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Navigation */
+.nav {
+    font-weight: 500;
+}
+
+/* Profile/home styling */
+.profile {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.profile .profile_inner h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.profile .profile_inner .tagline {
+    color: var(--secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Headshot styling */
+.profile .profile_inner img {
+    max-width: 180px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Bio content on homepage */
+.home-content {
+    margin-top: 2rem;
+    font-size: 1.05rem;
+}
+
+.home-content p {
+    margin-bottom: 1.2rem;
+}
+
+/* Main content area */
+.main {
+    max-width: 720px;
+}
+
+.post-content {
+    font-size: 1.05rem;
+}
+
+/* Footer */
+.footer {
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+/* Remove excess decorations */
+.post-title {
+    font-size: 1.6rem;
+}

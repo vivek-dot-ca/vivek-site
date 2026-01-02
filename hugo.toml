@@ -1,0 +1,56 @@
+baseURL = "https://example.com/"  # Update with your actual domain
+languageCode = "en-us"
+title = "Vivek Krishnamurthy"
+theme = "PaperMod"
+
+[params]
+  author = "Vivek Krishnamurthy"
+  description = "Associate Professor of Law, University of Colorado Law School"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  defaultTheme = "light"
+  disableThemeToggle = true
+  hideFooter = true
+
+  # Use homeInfoParams instead of profileMode to show bio content
+  [params.homeInfoParams]
+    Title = "Vivek Krishnamurthy"
+    Content = """
+Associate Professor of Law | Director, Samuelson-Glushko Technology Law & Policy Clinic
+
+University of Colorado Law School
+
+---
+
+I study how international law governs digital infrastructure. My current work addresses internet transit law, AI sovereignty, and computing governance. I advise governments, activists, and companies on technology's human rights implications and serve as a public commentator on emerging technology and policy issues.
+
+Contact: vivek [dot] krishnamurthy [at] colorado [dot] edu
+"""
+    # Headshot: save your image to static/images/headshot.jpg
+    # then uncomment the next line:
+    # imageUrl = "/images/headshot.jpg"
+    # imageWidth = 180
+    # imageHeight = 180
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Publications"
+  url = "/publications/"
+  weight = 2
+
+[[menu.main]]
+  name = "CV"
+  url = "/cv.pdf"
+  weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

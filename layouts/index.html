@@ -1,0 +1,22 @@
+{{- define "main" }}
+
+<article class="home-content">
+    <header style="margin-bottom: 1.5rem;">
+        <h1 style="margin-bottom: 0.5rem;">Vivek Krishnamurthy</h1>
+        <p style="color: #555; margin: 0; line-height: 1.6;">
+            Associate Professor of Law<br>
+            Director, Samuelson-Glushko Technology Law &amp; Policy Clinic<br>
+            University of Colorado Law School
+        </p>
+    </header>
+
+    {{- if (fileExists "static/images/headshot.jpg") }}
+    <img src="/images/headshot.jpg" alt="Vivek Krishnamurthy" style="width: 450px; border-radius: 4px; margin-bottom: 1.5rem;">
+    {{- end }}
+
+    <div class="bio">
+        {{ .Content }}
+    </div>
+</article>
+
+{{- end }}
